@@ -23,6 +23,7 @@ node_js:
 before_install:
   - $CXX --version
   - npm install npm
+  - mv node_modules npm
   - npm/.bin/npm --version  
   - npm/.bin/npm install -g node-gyp-install
   - node-gyp-install
